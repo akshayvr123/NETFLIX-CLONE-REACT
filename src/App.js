@@ -4,13 +4,15 @@ import "./App.css"
 import { useState } from 'react';
 import Banner from './Components/Banner/Banner';
 import NavBar from './Components/NavBar/NavBar';
+import {originals,actions} from "./urls"
 function App() {
  
   return (
     <div className="app">
      <NavBar/>
      <Banner/>
-     <RowPost/>
+     <RowPost url={originals} title="Netflix originals"/>
+     <RowPost url={actions} title="Action" isSmall/>
     </div>
   );
 }
