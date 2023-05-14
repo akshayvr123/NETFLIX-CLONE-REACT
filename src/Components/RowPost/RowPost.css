@@ -1,6 +1,7 @@
 .row{
     margin-left: 20px;
     color: #fff;
+   
 }
 .posters{
     display: flex;
@@ -17,12 +18,47 @@ display: none;
 .poster{
     max-height: 250px;
     margin-right: 10px;
+
+    padding-bottom: 25px;
 }   
 .smallPoster{
     max-height: 150px;
     margin-right: 10px;
-   
+ 
 }
 .poster:hover{
     transform: scale(1.08);
+}
+.Movie_name{
+ 
+    font-family: sans-serif;
+    margin-top: -100px;
+    opacity: 0;
+    overflow: hidden;
+   
+}
+ .Movie_name:hover{
+    transition: opacity .2s ease-out;
+    -moz-transition: opacity .2s ease-out;
+    -webkit-transition: opacity .2s ease-out;
+    -o-transition: opacity .2s ease-out;
+    opacity: 1;
+ 
+}
+.Movie_title_large{
+    position: relative;
+    font-family: sans-serif;
+    font-size: 30px;
+    margin-top: -150px;
+    opacity: 0;
+}
+.Movie_title_large:hover{
+    transition: opacity .2s ease-out;
+    -moz-transition: opacity .2s ease-out;
+    -webkit-transition: opacity .2s ease-out;
+    -o-transition: opacity .2s ease-out;
+    opacity: 1;
+}
+.smallPoster:hover{
+    opacity: 1;
 }
